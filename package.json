@@ -1,0 +1,31 @@
+{
+  "name": "icon",
+  "version": "0.0.1",
+  "description": "Convert an image to thumbnails suitable for favicon, metro tiles, touch icons.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abrkn/icon.git"
+  },
+  "bin": {
+    "icon": "./bin/icon"
+  },
+  "author": {
+    "name": "Andreas Brekken",
+    "email": "a@abrkn.com"
+  },
+  "keywords": [
+    "favicon",
+    "touchicon",
+    "metro",
+    "icon",
+    "tile"
+  ],
+  "preferGlobal": true,
+  "license": "MIT",
+  "dependencies": {
+    "canvas": "~1.0.3",
+    "optimist": "~0.5.2",
+    "async": "~0.2.9",
+    "request": "~2.21.0"
+  }
+}

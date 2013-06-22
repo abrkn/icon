@@ -1,0 +1,23 @@
+#!/usr/bin/env node
+var argv = require('optimist').argv
+, async = require('async')
+, fn = argv._[0]
+, icon = require('..')
+
+async.waterfall([
+    function(next) {
+        icon.readImage(fn, next)
+    },
+
+    function(img, imgBuf, next) {
+        async.each(icon.files, function(f, next) {
+            icon.writeImage(img, f.filename, f.size, f.size, next)
+        }, function(err) {
+            next(err, imgBuf)
+        })
+    },
+
+    icon.bufferToIco
+], function(err) {
+    if (err) console.error(err.message)
+})
