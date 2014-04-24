@@ -1,6 +1,6 @@
 {
   "name": "icon",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Convert an image to thumbnails suitable for favicon, metro tiles, touch icons.",
   "repository": {
     "type": "git",
