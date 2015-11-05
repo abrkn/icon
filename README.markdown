@@ -3,6 +3,12 @@ icon
 
 Convert an image to thumbnails suitable for favicon, metro tiles, touch icons.
 
+Dependencies
+---
+
+Requires [http://cairographics.org/](http://cairographics.org/) which can be installed
+using `brew install` on OS X.
+
 Install
 ---
 
